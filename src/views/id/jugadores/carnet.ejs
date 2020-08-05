@@ -1,0 +1,18 @@
+<div class="container">
+    ´
+    <% for(var i=0 ; i < registro.length; i++) { %>
+
+    
+    <div class="row">
+        <div class="col-md-2.5 shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="card text-white bg-info border-dark text-center " style="width: 10rem;">
+                <img class="card-img-top" src="<%- registro[i].Foto %>" alt="Card image cap">
+                <div class="card-body">
+                    <u>   <h6 class="card-title"><%- registro[i].Nombres %> <%- registro[i].Apellido_Paterno %> <%- registro[i].Apellido_Materno %></h6></u>
+                  <u> <h5> <p class="card-text"><%- registro[i].Fecha_Nacimiento %> </p></h5></u>
+                    <u>   <h5> <p class="card-text">ID.-<%- registro[i].ID_FB %> </p></h5></u>
+
+                </div>
+              </div>
+        </div>
+        <% } %>

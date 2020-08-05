@@ -1,0 +1,37 @@
+<div class="container">
+    <h6>
+        <small class="text-muted">
+            Goles en la Categoria Femenil
+        </small>
+      </h6> 
+<table class="table table-sm table-striped table-bordered table-hover">
+
+ <thead class="table-success">
+    <tr align="center">
+      <th scope="col">Foto</th>
+
+      <th scope="col">Goles</th>
+      
+
+    </tr>
+  </thead>
+  <tbody>
+      
+    <% for(var i=0 ; i < historicogolesfeme.length; i++) { %>
+             
+      <tr align="center">
+        <td><img src="<%- historicogolesfeme[i].Foto %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+        <td><%- historicogolesfeme[i].goles %></td>
+        
+  
+      </tr>
+      <% } %>
+  
+      
+      
+
+  
+  </tbody>
+</table>
+
+</div>

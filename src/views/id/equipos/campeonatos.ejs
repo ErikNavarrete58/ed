@@ -1,0 +1,41 @@
+<div class="container">
+  <h6>
+      <small class="text-muted">
+Campeonatos en Liga ED   </small>
+    </h6> 
+<table class="table table-sm table-striped table-bordered table-hover">
+
+<thead class="table-success">
+  <tr align="center">
+    <th scope="col">ESC</th>
+
+    <th scope="col">Cat.</th>
+    <th scope="col">Torneo</th>
+    <th scope="col">Liga</th>
+
+
+
+  </tr>
+</thead>
+<tbody>
+    
+  <% for(var i=0 ; i < campeones.length; i++) { %>
+           
+    <tr align="center">
+      <td><img src="<%- campeones[i].Escudo %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+      <td><%- campeones[i].Categoria %></td>
+      <td><%- campeones[i].Torneo %></td>
+      <td><%- campeones[i].Liga %></td>
+
+
+    </tr>
+    <% } %>
+
+    
+    
+
+
+</tbody>
+</table>
+
+</div>

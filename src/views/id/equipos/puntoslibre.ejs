@@ -1,0 +1,45 @@
+<div class="container">
+    <h6>
+        <small class="text-muted">
+Puntaje Historico Libre
+    </small>
+      </h6> 
+<table class="table table-sm table-striped table-bordered table-hover">
+
+ <thead class="table-success">
+    <tr align="center">
+      <th scope="col">Equipo</th>
+
+      <th scope="col">Pts</th>
+      <th scope="col">GF</th>
+      <th scope="col">GC</th>
+      <th scope="col">DFG</th>
+
+
+      
+
+    </tr>
+  </thead>
+  <tbody>
+      
+    <% for(var i=0 ; i < Libre.length; i++) { %>
+             
+      <tr align="center">
+        <td><img src="<%- Libre[i].Escudo %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+        <td><%- Libre[i].Puntos %></td>
+        <td><%- Libre[i].GF %></td>
+        <td><%- Libre[i].GC %></td>
+        <td><%- Libre[i].DFG %></td>
+  
+      </tr>
+      <% } %>
+  
+      
+      
+
+  
+  </tbody>
+</table>
+
+</div>
+<a href="/libreglobal">Ve el Ranking Completo</a>

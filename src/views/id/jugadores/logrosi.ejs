@@ -1,0 +1,42 @@
+<div class="container">
+    <h6>
+        <small class="text-muted">
+            Tus logros en Liga ED
+        </small>
+      </h6> 
+<table class="table table-sm table-striped table-bordered table-hover">
+
+ <thead class="table-success">
+    <tr align="center">
+      <th scope="col">Esc</th>
+
+      <th scope="col">Logro</th>
+      <th scope="col">Cat.</th>
+      <th scope="col">Torneo</th>
+      <th scope="col">Liga</th>
+      
+
+    </tr>
+  </thead>
+  <tbody>
+      
+    <% for(var i=0 ; i < individuales.length; i++) { %>
+             
+      <tr align="center">
+        <td><img src="<%- individuales[i].Escudo %>" width="40px" height="40px" class="img-thumbnail"></img></td>
+        <td><%- individuales[i].Premio %></td>
+        <td><%- individuales[i].Categoria %></td>
+        <td><%- individuales[i].Torneo %></td>
+        <td><%- individuales[i].Liga %></td>
+  
+      </tr>
+      <% } %>
+  
+      
+      
+
+  
+  </tbody>
+</table>
+
+</div>
